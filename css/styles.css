@@ -1,18 +1,67 @@
+@font-face {
+  font-family: 'Brandon light';
+  src: url('../fonts/Brandon_light.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Brandon bld';
+  src: url('../fonts/Brandon_bld.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: lavender;
+  background-color: #F7CAC9;
 }
 
+/* Typography */
+h1{
+    font-family: 'Brandon bld', sans-serif;
+    text-align: center;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 4em;
+    color: white;
 
+  }
+
+p {
+  font-family: 'Brandon light', sans-serif;
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.5em;
+  color: white;
+}
+
+.p-food-item {
+  margin-bottom: 70px;
+}
+
+.food-img {
+  width: 20%;
+  max-width: 250px;
+}
+
+.black {
+  background-color: black;
+}
+
+img {
+  padding: 0;
+  margin: 0;
+}
 /* navigation*/
 header {
   background: #F7CAC9;
   font-size: 5em;
   width: 100%;
   padding: 40px 0;
-  color: white;
+  color: black;
   text-align: center;
 }
 
@@ -31,6 +80,7 @@ nav {
   top: 0;
   width: 100%;
   z-index: 9999;
+  border-bottom: 1px solid black;
 }
 
 nav img {
@@ -41,7 +91,7 @@ nav img {
 nav ul {
   background-color: #F7CAC9;
   overflow: hidden;
-  color: white;
+  color: black;
   padding: 0;
   text-align: center;
   margin: 0;
@@ -56,7 +106,7 @@ nav ul {
 .mobile-item {
   background-color: #F7CAC9;
   overflow: hidden;
-  color: white;
+  color: black;
   padding: 0;
   text-align: center;
   margin: 0;
@@ -69,18 +119,22 @@ nav ul {
 
 
 nav ul li {
+  font-family: 'Brandon bld', sans-serif;
+  font-size: 18px;
+  color: black;
   display: inline-block;
-  color: white;
   padding: 20px;
   margin-top: 10px;
 }
 
 nav ul li:hover {
-  background-color: red;
+  color: #3A4651;
+
 }
 
 
 a {
+
   text-decoration: none;
   color: inherit;
 }
@@ -88,23 +142,45 @@ a {
 section {
   line-height: 1.5em;
   font-size: 0.9em;
-  padding: 40px;
-  width: 75%;
+  padding: 100px 0;
   margin: 0 auto;
-  height: 2000px;
-  background-color: grey;
+  height: auto;
+  width: 100%;
 }
 
-.handle {
-  width: 100%;
-  background: red;
-  text-align: center;;
-  box-sizing: border-box;
-  padding: 15px 10px;
-  cursor: pointer;
-  color: white;
-  display: none;
+.food-item {
+  width: 50%;
+  margin: auto;
+  text-align: center;
 }
+
+.hero {
+  position: static;;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 0;
+}
+
+.logotype {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.center {
+  text-align: center;
+
+}
+
+.logo-hero {
+  width: 50%;
+  max-width: 500px;
+}
+
+/* Hamburger Animation*/
 
 .hamburger {
   width: 100%;
@@ -114,11 +190,11 @@ section {
   padding: 15px 10px;
   cursor: pointer;
   display: none !important;
-  color: white !important;
+  color: black !important;
 }
 
 .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-  background-color: white !important;
+  background-color: black !important;
 }
 .hamburger-box{
   margin-top: 15px;
@@ -126,7 +202,39 @@ section {
 }
 .mobile-item {
   display: none;
+
 }
+
+/* Animation menu sections*/
+
+
+.blocks, .blocks-2, .blocks-left, .blocks-right  {
+	margin: auto;
+	width: 90%;
+
+}
+
+.blocks div, .blocks-2 div, .blocks-up div, .blocks-up div {
+
+	-webkit-transition: -webkit-transform 1s, opacity 1s;
+	-moz-transition: -moz-transform 1s, opacity 1s;
+	transition: transform 1s, opacity 1s;
+}
+
+.block-up {
+	opacity: 0;
+	-webkit-transform: translateY(80px);
+	-moz-transform: translateY(80px);
+	transform: translateY(80px);
+ }
+
+.scale-up {
+   -webkit-transform: scale(.95);
+  -moz-transform: scale(.95);
+  transform: scale(.95);
+}
+
+
 
 
 @media screen and (max-width: 580px){
@@ -140,13 +248,26 @@ section {
     display: block;
   }
 
+.border-menu{
+  border-bottom: 1px solid black;
+}
+
+
+
   .showing {
     max-height: 20em;
   }
 
 
   .mobile-item li {
-    padding: 10px 0;
+    font-family: 'Brandon bld', sans-serif;
+    font-size: 18px;
+    color: black;
+    padding: 15px 0;
+  }
+
+  .mobile-item li:hover {
+    color: #3A4651;
   }
 
   nav ul li {

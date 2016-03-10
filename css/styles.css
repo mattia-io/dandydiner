@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+
+/* navigation*/
+header {
+  background: #F7CAC9;
+  font-size: 5em;
+  width: 100%;
+  padding: 40px 0;
+  color: white;
+  text-align: center;
+}
+
+nav {
+  background: #F7CAC9;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  background: #F7CAC9;
+  height: 80px;
+  position:fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+nav img {
+  padding-top: 15px;
+  width: 50px;
+}
+
+nav ul {
+  background-color: #F7CAC9;
+  overflow: hidden;
+  color: white;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  -webkit-transition: max-height 0.4s, ease-out;
+  -ms-transition: max-height 0.4, ease-out;
+  -moz-transition: max-height 0.4s, ease-out;
+  -o-transition: max-height 0.4s, ease-out;
+  transition: max-height 0.4s, ease-out;
+
+}
+
+.mobile-item {
+  background-color: #F7CAC9;
+  overflow: hidden;
+  color: white;
+  padding: 0;
+  text-align: center;
+  margin: 0;
+  -webkit-transition: max-height 0.4s, ease-out;
+  -ms-transition: max-height 0.4, ease-out;
+  -moz-transition: max-height 0.4s, ease-out;
+  -o-transition: max-height 0.4s, ease-out;
+  transition: max-height 0.4s, ease-out;
+}
+
+
+nav ul li {
+  display: inline-block;
+  color: white;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+nav ul li:hover {
+  background-color: red;
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  line-height: 1.5em;
+  font-size: 0.9em;
+  padding: 40px;
+  width: 75%;
+  margin: 0 auto;
+  height: 2000px;
+  background-color: grey;
+}
+
+.handle {
+  width: 100%;
+  background: red;
+  text-align: center;;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  cursor: pointer;
+  color: white;
+  display: none;
+}
+
+.hamburger {
+  width: 100%;
+  background: #F7CAC9 !important;
+  text-align: right;
+  box-sizing: border-box;
+  padding: 15px 10px;
+  cursor: pointer;
+  display: none !important;
+  color: white !important;
+}
+
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  background-color: white !important;
+}
+.hamburger-box{
+  margin-top: 15px;
+
+}
+.mobile-item {
+  display: none;
+}
+
+
+@media screen and (max-width: 580px){
+
+  nav ul {
+    display: none;
+  }
+
+  .mobile-item {
+    max-height: 0;
+    display: block;
+  }
+
+  .showing {
+    max-height: 20em;
+  }
+
+
+  .mobile-item li {
+    padding: 10px 0;
+  }
+
+  nav ul li {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  }
+
+
+    .hamburger {
+    display: block !important;
+    }
+
+  .handle {
+  display: block;
+  }
+
+
+
+}

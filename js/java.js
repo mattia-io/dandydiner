@@ -1,8 +1,11 @@
 
 // Navbar fades in after 700px
+$(document).ready(function(){
+    $(".navbar").hide();
+});
+
 
 $(function(){
-  $('.navbar').hide();
   $(window).scroll(function(){
     if($(this).scrollTop() >= 800){
       $('.navbar').fadeIn();
@@ -10,7 +13,6 @@ $(function(){
       $('.navbar').fadeOut();
     }
   });
-
 });
 
 
@@ -28,4 +30,6 @@ $(function(){
 
     $('.hamburger').on('click', function(){
       $('.mobile-item').toggleClass('showing');
+      $('.mobile-item').toggleClass('border-menu');
+
     });

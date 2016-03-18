@@ -114,6 +114,52 @@
       </div>
     </section>
 
+<section id="map">
+</section>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfNfp-VR7hXCuOpjUnk2G04RpZMHK3X_Y=false"></script>
+        <script type="text/javascript">
+  	// Create and Initialise the Map (required) our google map below
+              google.maps.event.addDomListener(window, 'load', init);
+                function init() {
+                    // Basic options for a simple Google Map
+                    // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
+    		var mapOptions = {
+    		     // How zoomed in you want the map to start at (always required)
+                        zoom: 17,
+                        scrollwheel: false,
+                        // The latitude and longitude to center the map (always required)
+                        center: new google.maps.LatLng(52.485910, 13.425840), //
+                        // How you would like to style the map.
+                        // This is where you would paste any style found on [Snazzy Maps][1].
+                        // copy the Styles from Snazzy maps,  and paste that style info after the word "styles:"
+                      styles: [{stylers:[{hue:'#0f252e'},{saturation:50}]},{featureType:'administrative',elementType:'geometry',stylers:[{lightness:80},{visibility:'simplified'}]},{featureType:'road',elementType:'labels',stylers:[{visibility:'off'}]}]
+                    };
+    		var mapElement = document.getElementById('map');
+          // Create the Google Map using out element and options defined above
+                    var map = new google.maps.Map(mapElement, mapOptions);
+    		// Define the image to use for the map marker (58 x 44 px)
+                    var image = 'https://dl.dropboxusercontent.com/s/bakrtw8rk5pdf2q/pointer.svg?dl=0';
+    		// Define the Lattitude and Longitude for the map location
+                    var myLatLng = new google.maps.LatLng(52.485910, 13.425840);
+    		// Define the map marker characteristics
+                    var mapMarker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    icon: image,
+                    title:  'Dandy Diner'
+                    });
+                   // Following Lines are needed if you use the Info Window to display content when map marker is clicked
+    		   var infowindow = new google.maps.InfoWindow({
+                                content: contentString
+                            });
+    	    	// Following line turns the marker, into a clickable button and when clicked, opens the info window
+                	google.maps.event.addListener(mapMarker, 'click', function() {
+                    	infowindow.open(map, mapMarker);
+                	});
+    }
+    </script>
+
 
 <script src="js/jquery.inview.js"></script>
 <script src="js/main.js"></script>

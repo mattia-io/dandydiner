@@ -1,212 +1,204 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Dandy Diner</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="css/normalize.css" rel="stylesheet" media="screen">
-    <link href="css/styles.css" rel="stylesheet" media="screen">
-    <link href="css/animate.css" rel="stylesheet" media="screen">
-    <link href="hamburgers-master/dist/hamburgers.css" rel="stylesheet">
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.6.2/modernizr.min.js"></script>
-
-  </head>
-
-  <body>
-    <!-- Navbar -->
-    <!-- <div class="navbar">
-          <nav>
-                <a><img src="img/Logo.png"></a>
-                <ul>
-                  <a  href="#menu"><li>MENU</li></a>
-                  <a href="#about"><li>ABOUT</li></a>
-                  <a href="#contact"><li>CONTACT</li></a>
-                </ul>
-          </nav>
-      </div> -->
-
-<!-- Navbar devices -->
-      <div class="navbar-device">
-            <nav>
-                  <a><img src="img/Logo.png"></a>
-
-                  <div class="hamburger hamburger--elastic">
-                    <div class="hamburger-box">
-                      <div class="hamburger-inner"></div>
-                    </div>
-                  </div>
-            </nav>
-
-            <ul class="mobile-item">
-                <a  href="#menu"><li>MENU</li></a>
-                <a href="#about"><li>ABOUT</li></a>
-                <a href="#contact"><li>CONTACT</li></a>
-            </ul>
+<!-- This site was created in Webflow. http://www.webflow.com-->
+<!-- Last Published: Sat Apr 16 2016 06:39:44 GMT+0000 (UTC) -->
+<html data-wf-site="5705392a339465db1745ac31" data-wf-page="5705392a339465db1745ac32">
+<head>
+  <meta charset="utf-8">
+  <title>Dandy Diner Berlin Vegan</title>
+  <meta name="description" content="Vegan Diner in Berlin-Neukolln serving refined vegan food and super drinks.">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Webflow">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/webflow.css">
+  <link rel="stylesheet" type="text/css" href="css/dandy-diner.webflow.css">
+  <script type="text/javascript" src="js/modernizr.js"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/fav.jpg">
+  <link rel="apple-touch-icon" href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png">
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-76402255-1'], ['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script');
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  <style>
+    #map img {
+    max-width: none;
+}
+  </style>
+</head>
+<body class="body">
+  <div class="w-section intro">
+    <div class="w-container container"><img width="500" src="images/01_Logo_White.svg" data-ix="appear-on-load" class="logo">
+    </div>
+  </div>
+  <div class="w-section logotype">
+    <div class="w-container container"><img width="700" src="images/White_Logotype.svg" class="logotype-img">
+    </div>
+  </div>
+  <div id="food" class="w-section burgers">
+    <div class="w-container container">
+      <div data-ix="appear-food" class="div-food"><img width="300" src="images/burger.svg" class="food-img">
+        <h1 class="food-title">BURGERS</h1>
+        <p class="paragraph-food"><strong>ITALIAN<br></strong>&nbsp;Aubergine tomato sauce, basil
+          <br>-
+          <br><strong>ASIA<br></strong>Teriyaki marinated tofu, Kimchi
+          <br>-
+          <br><strong>CLASSIC CHEESEBURGER</strong>
+        </p>
+        <h1 class="food-title price">6.5 €</h1>
+      </div>
+    </div>
+  </div>
+  <div class="w-section sandwiches">
+    <div class="w-container container">
+      <div data-ix="appear-food" class="div-food"><img width="300" src="images/sanwich.svg" class="food-img">
+        <h1 class="food-title">SANDWICHES</h1>
+        <p class="paragraph-food"><strong>AVOCADO<br></strong>Smashed in thick toastbread
+          <br>-
+          <br><strong>CHORIZO<br></strong>Beetroot tzatziki, caramelised onions, baby spinach
+          <br>-
+          <br><strong>CHIPOTLE<br></strong>Pulled mushrooms, coleslaw, mayo, baby spinach
+          <br>-
+          <br><strong>BERLIN STYLE<br></strong>Smoked tofu, remoulade, pickled onions</p>
+        <h1 class="food-title price">5.5 €</h1>
+      </div>
+    </div>
+  </div>
+  <div class="w-section salads">
+    <div class="w-container container">
+      <div data-ix="appear-food" class="div-food"><img width="300" src="images/salads.svg" class="food-img">
+        <h1 class="food-title">SALADS</h1>
+        <p class="paragraph-food"><strong>CLASSIC<br></strong>Chickpeas, aubergine yogurt, roasted carrots
+          <br>-
+          <br><strong>BELUGA<br></strong>Quinoa-beluga, fennel, pickled blue cabbage
+          <br>-
+          <br><strong>SHIITAKE<br></strong>Spelt-tomato, shiitake-cauliflower, orange endive
+          <br>-
+          <br><strong>DAIKON<br></strong>Topinambur, fennel-daikon, oven-beetroot</p>
+        <h1 class="food-title price">6.0 €</h1>
+      </div>
+    </div>
+  </div>
+  <div class="w-section sweets">
+    <div class="w-container container">
+      <div data-ix="appear-food" class="div-food"><img width="300" src="images/sweets.svg" class="food-img">
+        <h1 class="food-title">DESSERTS</h1>
+        <p class="paragraph-food"><strong>CHIA PUDDING<br></strong>-
+          <br><strong>BIRCHER MUSLI</strong>
+          <br>-
+          <br><strong>AÇAI BOWL</strong>
+        </p>
+        <h1 class="food-title price">3.5 €</h1>
+      </div>
+    </div>
+  </div>
+  <div id="about" class="w-section about">
+    <div class="w-container container"><img width="500" src="images/White_Logotype.svg" class="logotype-img">
+      <p class="paragraph">Dandy Diner is a fast food restaurant located in Berlin-Neukölln.
+        <br>
+        <br>Dandy Diner serves nutrient concentrated sandwiches, burgers, salads, sweets and cakes in a 40-seat light filled space. Our menu is strictly vegan, features gluten-free options, and we can always prepare substitutions for most dietary restrictions.
+        <br>
+        <br>Don’t miss the chance to have a drink - may it be a strong ass coffee, a healthy juice or a proper long drink - at our bar.</p>
+    </div>
+  </div>
+  <div class="w-section testimonials">
+    <div class="w-container container"><img width="100" src="images/Quotation_Marks.svg" class="quotation_image">
+      <p class="testimonial">Dieses Restaurant hat mein Leben verändert.</p>
+      <h3 class="testimonial-author">Rafael Horzon</h3>
+    </div>
+  </div>
+  <div id="contact" class="w-section contacts">
+    <div class="w-container container">
+      <h1 class="food-title">CONTACT</h1>
+      <div class="w-row">
+        <div class="w-col w-col-6">
+          <p class="paragraph left-aligned">Sun - Wed 12pm to 10pm
+            <br>Thu - Sat 12pm to 12am</p>
         </div>
-<!--
-          <ul class="mobile-item">
-            <a href="#menu"><li>MENU</li></a>
-            <a href="#about"><li>ABOUT</li></a>
-            <a href="#contact"><li>CONTACT</li></a>
-          </ul>
-    </div> -->
-
-<!-- END Navbar -->
-      <section class="hero">
-          <img class="hero-image wow fadeInUp" src="img/Logo.png" class="logo-hero">
-      </section>
-
-     <section class="flex-container-logotype black">
-       <img class="logotype" src="img/TYPE_PINK.png">
-     </section>
-
-     <section class="flex-container" id="menu">
-       <div class="food-item wow bounceInUp" data-wow-offset="100">
-              <img class="food-img" src="img/burger.png">
-              <h1>Vegan Burger</h1>
-              <p>Our vegn burgers are the hottest blablabla in town on crack and spicy sauce that burns twice.
-              </p>
-              <h1>€ 6.5</h1>
+        <div class="w-col w-col-6">
+          <p class="paragraph left-aligned">svenja@dandydiner.de</p>
         </div>
-     </section>
-
-     <section class="flex-container black">
-       <div class="food-item wow bounceInUp" data-wow-offset="100">
-              <img class="food-img" src="img/sandwich_white.png">
-              <h1>Vegan Dwich</h1>
-              <p>Our vegn burgers are the hottest blablabla in town on crack and spicy sauce that burns twice.
-              </p>
-              <h1>€ 4.5</h1>
-        </div>
-     </section>
-
-     <section class="flex-container">
-       <div class="food-item wow bounceInUp" data-wow-offset="100">
-              <img class="food-img" src="img/SALAD.png">
-              <h1>Vegan Salad</h1>
-              <p>Our vegn burgers are the hottest blablabla in town on crack and spicy sauce that burns twice.
-              </p>
-              <h1>€ 5.5</h1>
-        </div>
-     </section>
-
-     <section class="flex-container black" id="about">
-       <div class="food-item wow bounceInUp" data-wow-offset="100">
-              <img class="food-img" src="img/croissant.png">
-              <h1>Breakfast</h1>
-              <p>Our vegn burgers are the hottest blablabla in town on crack and spicy sauce that burns twice.
-              </p>
-              <h1>€ 5.5</h1>
-        </div>
-     </section>
-
-     <section class="flex-container-about">
-       <div class="wow bounceInUp" data-wow-offset="100">
-              <img class="logotype" src="img/TYPE.png">
-              <p class="p-about">Dandy DIner was born out of blalalbalabapl and crack and spicy sauce that burns twice.
-              </p>
-        </div>
-     </section>
-
-     <section class="flex-container black">
-       <div class="food-item wow bounceInUp" data-wow-offset="100">
-              <h1 class="h-contact">CONTACT</h1>
-              <p>Our vegn burgers are the hottest blablabla in town on crack and spicy sauce that burns twice.
-              </p>
-        </div>
-     </section>
-
-     <section id="map">
-     <section>
-
-       <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
-       <script type="text/javascript">
-           // When the window has finished loading create our google map below
-           google.maps.event.addDomListener(window, 'load', init);
-
-           function init() {
-               // Basic options for a simple Google Map
-               // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-               var mapOptions = {
-                   // How zoomed in you want the map to start at (always required)
-                   zoom: 17,
-                   scrollwheel: false,
-
-
-                   // The latitude and longitude to center the map (always required)
-                   center: new google.maps.LatLng(52.485910, 13.425840), // New York
-
-                   // How you would like to style the map.
-                   // This is where you would paste any style found on Snazzy Maps.
-                   styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
-               };
-               var image = 'https://dl.dropboxusercontent.com/s/bakrtw8rk5pdf2q/pointer.svg?dl=0';
-
-               // Get the HTML DOM element that will contain your map
-               // We are using a div with id="map" seen below in the <body>
-               var mapElement = document.getElementById('map');
-
-               // Create the Google Map using our element and options defined above
-               var map = new google.maps.Map(mapElement, mapOptions);
-
-               // Let's also add a marker while we're at it
-               var marker = new google.maps.Marker({
-                   position: new google.maps.LatLng(52.485910, 13.425840),
-                   map: map,
-                   icon: image,
-
-                   title: 'Dandy Diner'
-               });
-           }
-       </script>
-
-
-
-            <!--
-            <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-
-            <script type="text/javascript">
-                // When the window has finished loading create our google map below
+      </div>
+    </div>
+  </div>
+  <div id="map" class="w-section map">
+    <div data-widget-latlng="52.48591,13.42584" data-widget-style="roadmap" data-widget-zoom="16" data-disable-scroll="1" data-disable-touch="1" class="w-widget w-widget-map mapp"></div>
+  </div>
+  <div class="w-section imprint imprint-home"><a href="impressum.html" class="w-inline-block imprint"><h5 class="footer-text">IMPRINT</h5></a>
+    <h5 class="footer-text">© Dandy Diner GmbH 2016 - 2089</h5>
+  </div>
+  <div class="w-container container">
+    <a href="#" class="w-inline-block link-menu">
+      <div data-ix="click-menu" class="menu-icon">
+        <h2 class="menu-text">MENU</h2>
+      </div>
+    </a>
+  </div>
+  <div class="modal">
+    <div class="w-container">
+      <div class="div-menu-items"><a href="#" class="w-inline-block link-menu-modal"><h2 class="menu-item">FOOD</h2></a><a href="#" class="w-inline-block link-menu-modal"><h2 class="menu-item">ABOUT</h2></a><a href="#" class="w-inline-block link-menu-modal"><h2 class="menu-item">CONTACT</h2></a>
+      </div>
+    </div>
+  </div>
+  <div data-collapse="all" data-animation="default" data-duration="400" data-contain="1" data-doc-height="1" data-no-scroll="1" class="w-nav navbar">
+    <div class="w-container">
+      <nav role="navigation" class="w-nav-menu navmenu"><a href="#food" class="w-nav-link navlink">FOOD</a><a href="#about" class="w-nav-link navlink">ABOUT</a><a href="#contact" class="w-nav-link navlink">CONTACT</a>
+      </nav>
+      <div class="w-nav-button menu-button">
+        <h2 class="menu-text">MENU</h2>
+      </div>
+    </div>
+  </div>
+  <div class="w-section designedby">
+    <h4 class="designby-text">Designed by <a class="mattia" target="_blank" href="http://mattia.io/">Mattia</a></h4>
+  </div>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/webflow.js"></script>
+  <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfNfp-VR7hXCuOpjUnk2G04RpZMHK3X_Y=false"></script>
+  <script type="text/javascript">
+    // Create and Initialise the Map (required) our google map below
                 google.maps.event.addDomListener(window, 'load', init);
-
                 function init() {
                     // Basic options for a simple Google Map
                     // For more options see: https://developers.google.com/maps/documentation/javascript/reference#MapOptions
-                    var mapOptions = {
-                        // How zoomed in you want the map to start at (always required)
+    		var mapOptions = {
+    		     // How zoomed in you want the map to start at (always required)
                         zoom: 17,
                         scrollwheel: false,
-
-
                         // The latitude and longitude to center the map (always required)
-                        center: new google.maps.LatLng(52.485910, 13.425840), // New York
-
+                        center: new google.maps.LatLng(52.485910, 13.425840), //
                         // How you would like to style the map.
-                        // This is where you would paste any style found on Snazzy Maps.
-                        styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
-                    };
-                     var image = 'https://dl.dropboxusercontent.com/s/bakrtw8rk5pdf2q/pointer.svg?dl=0';
-                    // Get the HTML DOM element that will contain your map
-                    // We are using a div with id="map" seen below in the <body>
-                    var mapElement = document.getElementById('map');
-
-                    // Create the Google Map using our element and options defined above
+                        // This is where you would paste any style found on [Snazzy Maps][1].
+                        // copy the Styles from Snazzy maps,  and paste that style info after the word "styles:"
+    styles: [{"featureType":"water","elementType":"geometry","stylers":[{"color":"#e9e9e9"},{"lightness":17}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":20}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"},{"lightness":17}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#ffffff"},{"lightness":29},{"weight":0.2}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":18}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#ffffff"},{"lightness":16}]},{"featureType":"poi","elementType":"geometry","stylers":[{"color":"#f5f5f5"},{"lightness":21}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#dedede"},{"lightness":21}]},{"elementType":"labels.text.stroke","stylers":[{"visibility":"on"},{"color":"#ffffff"},{"lightness":16}]},{"elementType":"labels.text.fill","stylers":[{"saturation":36},{"color":"#333333"},{"lightness":40}]},{"elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"geometry","stylers":[{"color":"#f2f2f2"},{"lightness":19}]},{"featureType":"administrative","elementType":"geometry.fill","stylers":[{"color":"#fefefe"},{"lightness":20}]},{"featureType":"administrative","elementType":"geometry.stroke","stylers":[{"color":"#fefefe"},{"lightness":17},{"weight":1.2}]}]
+                                     };
+    		var mapElement = document.getElementById('map');
+                    // Create the Google Map using out element and options defined above
                     var map = new google.maps.Map(mapElement, mapOptions);
-
-                    // Let's also add a marker while we're at it
-                    var marker = new google.maps.Marker({
-                        position: new google.maps.LatLng(52.485910, 13.425840),
-                        map: map,
-                        icon: image,
-                        title: 'Dandy Diner!'
+    		// Define the image to use for the map marker (58 x 44 px)
+                    var image = 'https://dl.dropboxusercontent.com/s/bakrtw8rk5pdf2q/pointer.svg?dl=0';
+    		// Define the Lattitude and Longitude for the map location
+                    var myLatLng = new google.maps.LatLng(52.485910, 13.425840);
+    		// Define the map marker characteristics
+                    var mapMarker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: map,
+                    icon: image,
+                    title:  'Dandy Diner'
                     });
-                }
-            </script> -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-     <script src="js/animate.js"></script>
-  </body>
-  </html>
+                   // Following Lines are needed if you use the Info Window to display content when map marker is clicked
+    		   var infowindow = new google.maps.InfoWindow({
+                                content: contentString
+                            });
+    	    	// Following line turns the marker, into a clickable button and when clicked, opens the info window
+                	google.maps.event.addListener(mapMarker, 'click', function() {
+                    	infowindow.open(map, mapMarker);
+                	});
+    }
+  </script>
+</body>
+</html>
